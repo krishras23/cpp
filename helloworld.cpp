@@ -2,7 +2,12 @@
 
 using namespace std;
 
-int main() {
-    cout << "Hello World!";
+int main(int argc, char *argv[]){
+    if (argc > 1){
+        cout << "Hello World " << argv[1] << "!" << endl;
+    }
+    else {
+        cout << "Hello World!" << endl;
+    }
     return 0;
 }
